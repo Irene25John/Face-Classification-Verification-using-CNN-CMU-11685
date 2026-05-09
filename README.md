@@ -1,4 +1,4 @@
-# CMU 11-685 · HW2P2: Face Classification & Verification
+# CMU 11-685 : Face Classification & Verification
 
 > **Academic Competition / Project** for **11-685: Introduction to Deep Learning (Spring 2026)**
 > Carnegie Mellon University

@@ -82,15 +82,11 @@ Adding `label_smoothing=0.1` to `CrossEntropyLoss` prevented the model from beco
 
 **3. Classification accuracy ≠ Verification quality**
 
-A model can achieve high closed-set classification accuracy while still performing poorly at verification. The CE loss encourages correct class scores but does not explicitly enforce that embeddings of the same person are geometrically close. Due to time constraints, metric learning losses like **ArcFace** or **Triplet Loss** were not implemented in this submission — but adding them is the most impactful next step for improving verification EER.
+A model can achieve high closed-set classification accuracy while still performing poorly at verification. The CE loss encourages correct class scores but does not explicitly enforce that embeddings of the same person are geometrically close. Due to time constraints, metric learning losses like **ArcFace** or **Triplet Loss** were not implemented in this submission, but adding them is the most impactful next step for improving verification EER.
 
 **4. Cosine similarity is better than Euclidean distance for verification**
 
 Cosine similarity measures the angle between embedding vectors rather than their magnitude, making it robust to scale differences across images. During inference, embeddings from two images are compared as:
-
-```python
-similarity = (feat1 * feat2).sum(dim=1)  # dot product of L2-normalized vectors
-```
 
 ---
 

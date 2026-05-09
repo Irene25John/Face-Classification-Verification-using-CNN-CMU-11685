@@ -1,7 +1,9 @@
 # CMU 11-685 : Face Classification & Verification
 
 > **Academic Competition / Project** for **11-685: Introduction to Deep Learning (Spring 2026)**
+
 > Carnegie Mellon University
+
 > Kaggle Competition: [11785-hw-2-p-2-face-verification-spring-2026](https://www.kaggle.com/competitions/11785-hw-2-p-2-face-verification-spring-2026/leaderboard)
 
 ---
